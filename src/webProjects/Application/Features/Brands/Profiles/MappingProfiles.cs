@@ -1,4 +1,6 @@
 ﻿using Application.Features.Brands.Commands.Create;
+using Application.Features.Brands.Commands.Delete;
+using Application.Features.Brands.Commands.Update;
 using Application.Features.Brands.Dtos;
 using AutoMapper;
 using Domain.Entities;
@@ -11,6 +13,15 @@ public class MappingProfiles:Profile
     {
         CreateMap<Brand, CreateBrandCommand>().ReverseMap();
         CreateMap<Brand, CreatedBrandResponse>().ReverseMap();
+
+        CreateMap<Brand, DeleteBrandCommand>().ReverseMap();
+        CreateMap<Brand, DeletedBrandResponse>().ReverseMap();
+
+        CreateMap<Brand, UpdateBrandCommand>().ReverseMap();
+        CreateMap<Brand, UpdatedBrandResponse>().ReverseMap();
+
+        CreateMap<Brand, GetAllBrandsResponse>().ReverseMap();
+        CreateMap<Brand, GetByIdBrandResponse>().ReverseMap();
 
     }
 }
