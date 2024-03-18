@@ -16,5 +16,7 @@ public static class PersistenceServiceRegistration
 
         services.AddScoped<IBrandRepository, BrandRepository>();
         return services;
+        services.AddScoped<IModelRepository, ModelRepository>();
+        return services;
     }
 } 

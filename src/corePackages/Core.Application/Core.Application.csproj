@@ -15,4 +15,10 @@
     <ProjectReference Include="..\Core.CrossCuttingConcerns\Core.CrossCuttingConcerns.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Pipelines\Logging\" />
+    <Folder Include="Pipelines\Caching\" />
+    <Folder Include="Pipelines\Performance\" />
+  </ItemGroup>
+
 </Project>

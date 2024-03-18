@@ -7,7 +7,7 @@ public class Car : BaseEntity<int>
     public int ModelId { get; set; }
     public int ModelYear { get; set; }
     public string Plate { get; set; }
-    public int State { get; set; }  // 1- Available 2- Rented 3-Under Maitenance
+    public int State { get; set; }  // 1- Mevcut 2- Kiralık 3- Bakım Altında
     public double DailyPrice { get; set; }
 
     public Model Model { get; set; }
