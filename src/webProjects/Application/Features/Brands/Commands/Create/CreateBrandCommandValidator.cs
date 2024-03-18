@@ -11,3 +11,6 @@ public class CreateBrandCommandValidator : AbstractValidator<CreateBrandCommand>
         RuleFor(b => b.Name).MinimumLength(2);
     }
 }
+
+//** RuleFor yöntemi, bir model sınıfının belirli bir özelliği (property)
+//için doğrulama kuralları tanımlamak için kullanılır.**///

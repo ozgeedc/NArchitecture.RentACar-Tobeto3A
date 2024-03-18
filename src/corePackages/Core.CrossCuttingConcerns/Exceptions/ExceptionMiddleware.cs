@@ -22,11 +22,11 @@ public class ExceptionMiddleware
         }
         catch (Exception exception)
         {
-            await HandleExceptionAsync(context.Response,exception);
+            await HandleExceptionAsync(context.Response, exception);
         }
     }
 
-    private Task HandleExceptionAsync(HttpResponse response,Exception exception)
+    private Task HandleExceptionAsync(HttpResponse response, Exception exception)
     {
         response.ContentType = "application/json";
         _handler.Response = response;
